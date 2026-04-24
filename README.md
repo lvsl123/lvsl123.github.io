@@ -1,6 +1,6 @@
 <script>
   // async // ======== GREAT! it works ================
-  async function extractTagNotInUse() {
+  async function extractTag() {
   	try {
   		source = await fetch("./print-this.html");
   		if (!source.ok) throw new Error("those who are behind fail in real life");
@@ -15,6 +15,19 @@
   
   
   }
-extractTag();
+  
+  async function wait() {
+  	await new Promise(resolve => setTimeout(resolve, 1000));
+  
+  }
+  function displayHtmlFile() {
+  	document.getElementById('displayAllHtmlHere').innerHTML = source;
+  }
+  
+  extractTag();wait();displayHtmlFile();
+  
 </script>
 
+<div id="displayAllHtmlHere></div>
+
+<div id="displayPreview">Previews are displayed here</div>
