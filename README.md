@@ -1,8 +1,9 @@
 <script>
+  let source = "";
   // async // ======== GREAT! it works ================
-  async function extractTag() {
+  async function extractTag(url = "") {
   	try {
-  		source = await fetch("./print-this.html");
+  		source = await fetch(url);
   		if (!source.ok) throw new Error("those who are behind fail in real life");
   
   		let result = await source.text();
@@ -24,10 +25,8 @@
   	document.getElementById('displayAllHtmlHere').innerHTML = source;
   }
   
-  extractTag();wait();displayHtmlFile();
+  extractTag("https://raw.githubusercontent.com/lvsl123/my-pc/refs/heads/main/css/button.html");wait();displayHtmlFile();
   
 </script>
 
-<div id="displayAllHtmlHere></div>
-
-<div id="displayPreview">Previews are displayed here</div>
+<div id="displayAllHtmlHere">   </div>
