@@ -40,4 +40,4 @@
 <br><br>
 <button onclick="doIt()"> Display html page</button>
 
-<div id="displayAllHtmlHere">  display all html here </iframe>
+<iframe id="displayAllHtmlHere">  display all html here </iframe>
