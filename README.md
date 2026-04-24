@@ -35,7 +35,7 @@
 </script>
 
 <label>Paste url here or click the links below</label><br>
-<input id="url" type="text" value="https://raw.githubusercontent.com/lvsl123/my-pc/refs/heads/main/css/button.html"></input>
+<input id="url" type="text" value="https://raw.githubusercontent.com/lvsl123/my-pc/refs/heads/main/css/button.html">
 
 <br><br>
 <button onclick="doIt()"> Display html page</button>
