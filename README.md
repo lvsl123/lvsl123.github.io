@@ -38,6 +38,6 @@
 <input id="url" type="text" value="https://raw.githubusercontent.com/lvsl123/my-pc/refs/heads/main/css/button.html"></input>
 
 <br><br>
-<button> Display html page</button>
+<button onclick="doIt()"> Display html page</button>
 
 <div id="displayAllHtmlHere">  display all html here </div>
