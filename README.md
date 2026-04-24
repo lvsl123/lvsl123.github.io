@@ -25,8 +25,10 @@
   	document.getElementById('displayAllHtmlHere').innerHTML = source;
   }
   
-  extractTag("https://raw.githubusercontent.com/lvsl123/my-pc/refs/heads/main/css/button.html");wait();displayHtmlFile();
+  extractTag("https://raw.githubusercontent.com/lvsl123/my-pc/refs/heads/main/css/button.html");
+  wait();
+  displayHtmlFile();
   
 </script>
 
-<div id="displayAllHtmlHere">   </div>
+<div id="displayAllHtmlHere">  display all html here </div>
