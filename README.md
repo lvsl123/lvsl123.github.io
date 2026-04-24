@@ -27,7 +27,7 @@
   }
 
   function doIt() {
-    extractTag(document.getElementById('url').value);
+    extractTag(document.getElementById('url').value.toString());
     wait();
     displayHtmlFile();
   }
